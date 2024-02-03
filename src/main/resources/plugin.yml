@@ -1,0 +1,15 @@
+name: AdventureSurvival
+version: '${project.version}'
+main: org.jajader.AdventureSurvival
+api-version: '1.20'
+commands:
+  load:
+    description: r
+  save:
+    description: n
+  pos1:
+    description: r
+  pos2:
+    description: n
+  test:
+    description: n
