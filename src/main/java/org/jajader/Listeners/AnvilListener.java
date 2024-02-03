@@ -47,7 +47,6 @@ public class AnvilListener implements Listener {
             ItemStack secondItem = ai.getSecondItem();
             if (firstItem == null) return;
             if (secondItem == null) return;
-
             ItemStack enchant = new ItemStack(Material.ENCHANTED_BOOK);
             ItemMeta im = enchant.getItemMeta();
             im.setLore(Collections.singletonList("§7불멸의 조각"));
