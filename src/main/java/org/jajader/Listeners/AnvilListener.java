@@ -54,7 +54,6 @@ public class AnvilListener implements Listener {
             enchant.setItemMeta(im);
 
             if(Arrays.asList(table).contains(firstItem.getType()) && secondItem.isSimilar(enchant)){
-
                 ItemStack clone = firstItem.clone();
                 ItemMeta imm = clone.getItemMeta();
                 imm.setUnbreakable(true);
