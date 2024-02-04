@@ -9,6 +9,8 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Illusioner;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -79,13 +81,14 @@ public class SchematicCommands implements CommandExecutor {
                 }
 
                 if (command.getName().equals("test")) {
-                    ItemStack enchant = new ItemStack(Material.ENCHANTED_BOOK);
-                    ItemMeta im = enchant.getItemMeta();
-                    im.setLore(Collections.singletonList("§7불멸의 조각"));
-                    enchant.setItemMeta(im);
-                    p.getInventory().addItem(enchant);
+                    Location l = p.getLocation();
+                    Illusioner il = (Illusioner) l.getWorld().spawnEntity(l, EntityType.ILLUSIONER);
+                    il.setMaxHealth(300);
+                    il.setHealth(250);
 
                 }
+
+
             } else {
                 Component component = Component.text("명령어를 사용할 권한이 없습니다.").color(TextColor.color(255, 0, 0));
                 p.sendMessage(component);

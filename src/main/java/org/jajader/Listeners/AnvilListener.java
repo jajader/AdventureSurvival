@@ -24,18 +24,19 @@ import java.util.Collections;
 public class AnvilListener implements Listener {
 
     final static Material[] table = {
-    Material.WOODEN_AXE,Material.WOODEN_HOE,Material.WOODEN_SWORD,Material.WOODEN_PICKAXE, Material.WOODEN_SHOVEL,
-    Material.STONE_AXE, Material.STONE_HOE, Material.STONE_SWORD, Material.STONE_PICKAXE, Material.STONE_SHOVEL,
-    Material.IRON_AXE, Material.IRON_HOE, Material.IRON_SWORD, Material.IRON_PICKAXE, Material.IRON_SHOVEL,
-    Material.GOLDEN_AXE, Material.GOLDEN_HOE, Material.GOLDEN_SWORD, Material.GOLDEN_PICKAXE, Material.GOLDEN_SHOVEL,
-    Material.DIAMOND_AXE, Material.DIAMOND_HOE, Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_SHOVEL,
+        Material.WOODEN_AXE,Material.WOODEN_HOE,Material.WOODEN_SWORD,Material.WOODEN_PICKAXE, Material.WOODEN_SHOVEL,
+        Material.STONE_AXE, Material.STONE_HOE, Material.STONE_SWORD, Material.STONE_PICKAXE, Material.STONE_SHOVEL,
+        Material.IRON_AXE, Material.IRON_HOE, Material.IRON_SWORD, Material.IRON_PICKAXE, Material.IRON_SHOVEL,
+        Material.GOLDEN_AXE, Material.GOLDEN_HOE, Material.GOLDEN_SWORD, Material.GOLDEN_PICKAXE, Material.GOLDEN_SHOVEL,
+        Material.DIAMOND_AXE, Material.DIAMOND_HOE, Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_SHOVEL,
+        Material.NETHERITE_AXE, Material.NETHERITE_HOE,  Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_SHOVEL,
 
-    Material.CHAINMAIL_HELMET, Material.GOLDEN_HELMET, Material.DIAMOND_HELMET, Material.IRON_HELMET, Material.LEATHER_HELMET, Material.NETHERITE_HELMET, Material.TURTLE_HELMET,
-    Material.CHAINMAIL_CHESTPLATE, Material.GOLDEN_CHESTPLATE, Material.DIAMOND_CHESTPLATE, Material.IRON_CHESTPLATE, Material.LEATHER_CHESTPLATE, Material.NETHERITE_CHESTPLATE,
-    Material.CHAINMAIL_LEGGINGS, Material.GOLDEN_LEGGINGS, Material.DIAMOND_LEGGINGS, Material.IRON_LEGGINGS, Material.LEATHER_LEGGINGS, Material.NETHERITE_LEGGINGS,
-    Material.CHAINMAIL_BOOTS, Material.GOLDEN_BOOTS, Material.DIAMOND_BOOTS, Material.IRON_BOOTS, Material.LEATHER_BOOTS, Material.NETHERITE_BOOTS,
-    Material.SHEARS, Material.FISHING_ROD, Material.WARPED_FUNGUS_ON_A_STICK, Material.CARROT_ON_A_STICK,
-    Material.FLINT_AND_STEEL, Material.BOW, Material.TRIDENT, Material.ELYTRA, Material.SHIELD
+        Material.CHAINMAIL_HELMET, Material.GOLDEN_HELMET, Material.DIAMOND_HELMET, Material.IRON_HELMET, Material.LEATHER_HELMET, Material.NETHERITE_HELMET, Material.TURTLE_HELMET,
+        Material.CHAINMAIL_CHESTPLATE, Material.GOLDEN_CHESTPLATE, Material.DIAMOND_CHESTPLATE, Material.IRON_CHESTPLATE, Material.LEATHER_CHESTPLATE, Material.NETHERITE_CHESTPLATE,
+        Material.CHAINMAIL_LEGGINGS, Material.GOLDEN_LEGGINGS, Material.DIAMOND_LEGGINGS, Material.IRON_LEGGINGS, Material.LEATHER_LEGGINGS, Material.NETHERITE_LEGGINGS,
+        Material.CHAINMAIL_BOOTS, Material.GOLDEN_BOOTS, Material.DIAMOND_BOOTS, Material.IRON_BOOTS, Material.LEATHER_BOOTS, Material.NETHERITE_BOOTS,
+        Material.SHEARS, Material.FISHING_ROD, Material.WARPED_FUNGUS_ON_A_STICK, Material.CARROT_ON_A_STICK,
+        Material.FLINT_AND_STEEL, Material.BOW, Material.TRIDENT, Material.ELYTRA, Material.SHIELD
     };
 
 

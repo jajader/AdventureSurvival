@@ -2,7 +2,10 @@ package org.jajader.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
+import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Illusioner;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -19,7 +22,7 @@ public class ChunkloadListener implements Listener {
         KEY.put("temple", 1200);
         KEY.put("pg", 2400);
         KEY.put("Junsung2", 3600);
-        KEY.put("Junsung", 4800);
+        KEY.put("illusioner", 4800);
 
     }
 
@@ -32,6 +35,7 @@ public class ChunkloadListener implements Listener {
                         SchematicLoader sl = new SchematicLoader();
                         sl.loadSchematics(k, e.getChunk().getBlock(0,max,0).getLocation());
                         e.getChunk().setInhabitedTime(1);
+
                         for (Player p : Bukkit.getOnlinePlayers()) {
                             p.sendMessage(k + " "+ e.getChunk().getBlock(0,max,0).getLocation());
                         }

@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jajader.Commands.SchematicCommands;
 import org.jajader.Listeners.AnvilListener;
 import org.jajader.Listeners.ChunkloadListener;
+import org.jajader.Listeners.ItemDropListener;
 
 public final class AdventureSurvival extends JavaPlugin implements CommandExecutor, Listener {
 
@@ -23,6 +24,7 @@ public final class AdventureSurvival extends JavaPlugin implements CommandExecut
 
         getServer().getPluginManager().registerEvents(new ChunkloadListener(), this);
         getServer().getPluginManager().registerEvents(new AnvilListener(), this);
+        getServer().getPluginManager().registerEvents(new ItemDropListener(), this);
 
 
 
