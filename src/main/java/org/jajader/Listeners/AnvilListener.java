@@ -77,6 +77,7 @@ public class AnvilListener implements Listener {
             if (ai.getSecondItem().isSimilar(enchant) && ai.getResult() != null) {
                 if (e.getSlot() != 2) return;
                 if (e.getWhoClicked().getItemOnCursor().getType() != Material.AIR) return;
+
                 e.getWhoClicked().setItemOnCursor(ai.getResult().clone());
                 ai.setFirstItem(null);
                 ai.setSecondItem(null);
