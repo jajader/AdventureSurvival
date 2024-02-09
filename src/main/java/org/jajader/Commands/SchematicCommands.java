@@ -78,6 +78,9 @@ public class SchematicCommands implements CommandExecutor {
                     Component component = Component.text("두 번째 위치가 지정되었습니다.").color(TextColor.color(200, 50, 200));
                     p.sendMessage(component);
 
+                    String a = "";
+
+
                 }
 
                 if (command.getName().equals("test")) {
